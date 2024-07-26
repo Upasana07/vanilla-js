@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Child</title>
+</head>
+
+<body>
+    <ul id="myList">
+    </ul>
+</body>
+<script type="text/javascript">
+
+    const fruitList = ['Mango', 'Banana', 'Lychee', 'Grren Apple'];
+    const myList = document.getElementById('myList');
+    fruitList.forEach(element => {
+        const newElement = document.createElement('li');
+        newElement.textContent = element;
+        myList.appendChild(newElement);
+    });
+
+</script>
+
+</html>
